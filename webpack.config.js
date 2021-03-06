@@ -16,12 +16,12 @@ module.exports = {
                 loader: "babel-loader",
                 options: {
                     presets: [
-                        ['es2015', {
+                        ['@babel/env', {
                             modules: false
                         }]
                     ],
                     plugins: [
-                        'transform-class-properties'
+                        '@babel/plugin-proposal-class-properties'
                     ]
                 },
                 include: [
@@ -48,11 +48,6 @@ module.exports = {
         new webpack.DefinePlugin({
             "process.env": {
                 "NODE_ENV": JSON.stringify("production")
-            }
-        }),
-        new webpack.optimize.UglifyJsPlugin({
-            compressor: {
-                warnings: false
             }
         })
     ]
