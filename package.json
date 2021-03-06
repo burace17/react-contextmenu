@@ -46,7 +46,6 @@
   },
   "homepage": "https://github.com/vkbansal/react-contextmenu",
   "dependencies": {
-    "babel-loader": "^8.2.2",
     "classnames": "^2.2.5",
     "object-assign": "^4.1.0"
   },
@@ -62,6 +61,7 @@
     "@babel/preset-env": "^7.13.9",
     "@babel/preset-react": "^7.12.13",
     "@wojtekmaj/enzyme-adapter-react-17": "^0.4.1",
+    "babel-loader": "^8.2.2",
     "coveralls": "^3.0.0",
     "cross-env": "^7.0.0",
     "css-loader": "^5.0.0",
