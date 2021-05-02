@@ -12,7 +12,7 @@ import { cssClasses, callIfExists, store } from './helpers';
 export default class ContextMenu extends AbstractMenu {
     static propTypes = {
         id: PropTypes.string.isRequired,
-        children: PropTypes.node.isRequired,
+        children: PropTypes.node,
         data: PropTypes.object,
         className: PropTypes.string,
         hideOnLeave: PropTypes.bool,
